@@ -177,7 +177,19 @@ Combine, functions' effects to create a pipeline through which our program's dat
 ????
 
 ## Lambda:
-????'
+
+**Definition**:
+
+5555555555555555555
+
+**Code example**:
+
+444444444444444444444444444444444444444.
+ 
+**Example 1:**
+```js
+111111111111111111111111111111111
+```
 
 ## The resources come from this websites and talks
 
