@@ -28,17 +28,26 @@ Lazy evaluation, or call-by-need is an evaluation strategy which delays the eval
 
 **Code example**:
 
-gdfgfdgsfdg dfgdsfgdfgdfsgdfgdsfgdsfgdfg
+Lazy evaluation is the process of deferring the evaluation of an expression until later, and this can be done with thunks.
 
+**Example 1:**
 ```js
-//Incluyo el modulo con la clase de analisis sintactico para español.
-const spanishDb = require('./modules/spanish');
+// Not lazy
+var value = 1 + 1  // immediately evaluates to 2
 
-//Creo una instancia a la clase.
-let spanish = new spanishDb();
+// Lazy
+var lazyValue = () => 1 + 1  // Evaluates to 2 when lazyValue is *invoked*
 ```
-**Resources**:
-?
+
+**Example 2:**
+```js
+// Not lazy
+var value = 1 + 1  // immediately evaluates to 2
+
+// Lazy
+var lazyValue = () => 1 + 1  // Evaluates to 2 when lazyValue is *invoked*
+```
+
 
 ## Monoid:
 https://marmelab.com/blog/2018/04/18/functional-programming-2-monoid.html
