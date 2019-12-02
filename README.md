@@ -126,7 +126,7 @@ A functor is simply something that can be mapped over. Is anything that can be u
 
 **Code example**:
 
- In other words, is any object we can map and apply a function generating another object instance of the same type and connections.
+ In other words, is any object we can **MAP** and apply a function generating another object instance of the same type and connections.
  
 **Example 1:**
 ```js
