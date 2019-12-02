@@ -3,25 +3,6 @@
 # Functional programming in Javascript
 Well, I build this repository, because I consider it necessary to give my opinion based on my experience on how it is the best way to **check data types** in our projects using javascript. I think that JS is a great language that today is changing many ways of how to program, all this makes many programmers the lack of a static type checking system in variables at the time of compilation, causes in many people fear and uncertainty on how to handle certain aspects of an application
 
-## These sites have been used to collect material.
-
-Specialy from Anjana Vakil - **JSCONF**:
-- http://2016.jsunconf.eu/
-- http://bangbangcon.com/speakers.html#anjana-vakil
-
-Others websites:
-- https://github.com/vakila/functional-workshop
-- https://speakerdeck.com/vakila/first-steps-into-functional-programming
-- https://www.codingame.com/playgrounds/2980/practical-introduction-to-functional-programming-with-js
-- https://hackernoon.com/function-type-signatures-in-javascript-5c698c1e9801
-- https://marmelab.com/blog/2018/04/18/functional-programming-2-monoid.html
-- https://developer.mozilla.org/es/docs/Web/JavaScript/Closures
-- https://www.codementor.io/agustinchiappeberrini/lazy-evaluation-and-javascript-a5m7g8gs3
-- https://hackernoon.com/lazy-evaluation-in-javascript-84f7072631b7
-- https://stephen-young.me.uk/2013/01/20/functional-programming-with-javascript.html
-- https://marmelab.com/blog/2018/09/26/functional-programming-3-functor-redone.html
-- https://marmelab.com/blog/2019/03/20/functional-programming-4-art-of-chaining-monad.html
-
 ### In this repository we will learn about this concepts:
 - Lazy
 - Monoid
@@ -90,3 +71,22 @@ Combine, functions' effects to create a pipeline through which our program's dat
 
 ## Lambda:
 ????'
+
+## The resources come from this websites and talks
+
+Specialy from Anjana Vakil - **JSCONF**:
+- http://2016.jsunconf.eu/
+- http://bangbangcon.com/speakers.html#anjana-vakil
+
+Others websites:
+- https://github.com/vakila/functional-workshop
+- https://speakerdeck.com/vakila/first-steps-into-functional-programming
+- https://www.codingame.com/playgrounds/2980/practical-introduction-to-functional-programming-with-js
+- https://hackernoon.com/function-type-signatures-in-javascript-5c698c1e9801
+- https://marmelab.com/blog/2018/04/18/functional-programming-2-monoid.html
+- https://developer.mozilla.org/es/docs/Web/JavaScript/Closures
+- https://www.codementor.io/agustinchiappeberrini/lazy-evaluation-and-javascript-a5m7g8gs3
+- https://hackernoon.com/lazy-evaluation-in-javascript-84f7072631b7
+- https://stephen-young.me.uk/2013/01/20/functional-programming-with-javascript.html
+- https://marmelab.com/blog/2018/09/26/functional-programming-3-functor-redone.html
+- https://marmelab.com/blog/2019/03/20/functional-programming-4-art-of-chaining-monad.html
