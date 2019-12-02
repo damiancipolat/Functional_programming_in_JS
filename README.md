@@ -21,7 +21,8 @@ Well, I build this repository, because I consider it necessary to give my opinio
 
 
 ### Lazy evaluation:
-dfdsfdsfdsfds
+https://www.tutorialspoint.com/functional_programming/functional_programming_lazy_evaluation.htm
+????
 
 ### Monoid:
 https://marmelab.com/blog/2018/04/18/functional-programming-2-monoid.html
