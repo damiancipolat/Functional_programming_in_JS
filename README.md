@@ -70,13 +70,49 @@ var result = callApiLazy({url: '/api', options: {}});
 ```
 
 ## Monoid:
-https://marmelab.com/blog/2018/04/18/functional-programming-2-monoid.html
 
-The term Monoid comes from category theory. It describes a set of elements which has 3 special properties when combined with a particular operation, often named concat:
+**Definition**:
 
-The operation must combine two values of the set into a third value of the same set. If a and b are part of the set, then concat(a, b) must also be part of the set. In category theory, this is called a magma.
-The operation must be associative: concat(x, concat(y, z)) must be the same as concat(concat(x, y), z) where x, y, and z are any value in the set. No matter how you group the operation, the result should be the same, as long as the order is respected.
-The set must possess a neutral element in regard to the operation. If that neutral element is combined with any other value, it should not change it. concat(element, neutral) == concat(neutral, element) == element
+It describes a set of elements which has 3 special properties when combined with a particular operation, often named **concat**.
+
+- The operation must combine two values of the set into a third value of the same set. If a and b are part of the set, then concat(a, b) must also be part of the set. In category theory, this is called a magma.
+
+- The operation must be associative: concat(x, concat(y, z)) must be the same as concat(concat(x, y), z) where x, y, and z are any value in the set. No matter how you group the operation, the result should be the same, as long as the order is respected.
+
+- The set must possess a neutral element in regard to the operation. If that neutral element is combined with any other value, it should not change it. concat(element, neutral) == concat(neutral, element) == element.
+
+**Code example**:
+
+Monoid examples, could be STRING concat, NUMBER addition, FUNCTIONS composition, Async composition.
+
+**Example 1 - Strings:**
+```js
+const concat = (a, b) => a.concat(b);
+
+concat("hello", concat(" ", "world")); // "hello world"
+concat(concat("hello", " "), "world"); // "hello world"
+
+concat("hello", ""); // 'hello'
+concat("", "hello"); // 'hello'
+```
+
+**Example 2 - Numbers
+```js
+(1 + 2) + 3 == 1 + (2 + 3); // true
+
+x + 0; // x
+```
+
+**Example 2 - Functions
+```js
+const compose = (func1, func2) => arg => func1(func2(arg));
+
+const add5   = a => a + 5;
+const double = a => a * 2;
+
+const doubleThenAdd5 = compose(add5,double);
+doubleThenAdd5(3); // 11
+```
 
 ## Monad:
 https://marmelab.com/blog/2018/09/26/functional-programming-3-functor-redone.html
