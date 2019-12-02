@@ -96,14 +96,14 @@ concat("hello", ""); // 'hello'
 concat("", "hello"); // 'hello'
 ```
 
-**Example 2 - Numbers
+**Example 2 - Numbers**
 ```js
 (1 + 2) + 3 == 1 + (2 + 3); // true
 
 x + 0; // x
 ```
 
-**Example 2 - Functions
+**Example 2 - Functions**
 ```js
 const compose = (func1, func2) => arg => func1(func2(arg));
 
