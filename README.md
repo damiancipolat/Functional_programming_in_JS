@@ -20,7 +20,7 @@ Well, I build this repository, because I consider it necessary to give my opinio
 - Side effects
 
 
-## Lazy evaluation:
+## Lazy evaluation
 
 **Definition**:
 
