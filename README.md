@@ -115,8 +115,19 @@ doubleThenAdd5(3); // 11
 ```
 
 ## Monad:
-https://marmelab.com/blog/2018/09/26/functional-programming-3-functor-redone.html
-???
+
+**Definition**:
+
+5555555555555555555
+
+**Code example**:
+
+444444444444444444444444444444444444444.
+ 
+**Example 1:**
+```js
+111111111111111111111111111111111
+```
 
 ## Functor:
 
@@ -174,7 +185,19 @@ Stateless programming is a paradigm in which the operations (functions, methods,
 Combine, functions' effects to create a pipeline through which our program's data can flow through.
 
 ## Curry
-????
+
+**Definition**:
+
+5555555555555555555
+
+**Code example**:
+
+444444444444444444444444444444444444444.
+ 
+**Example 1:**
+```js
+111111111111111111111111111111111
+```
 
 ## Lambda:
 
