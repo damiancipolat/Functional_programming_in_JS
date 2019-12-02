@@ -135,9 +135,19 @@ A functor is simply something that can be mapped over. Is anything that can be u
 
 **Example 2:**
 ```js
-[1, 2, 3].map(val => val * 2); //generates [2, 4, 6], Array  is a functor.
+// A map of Number -> String
+const numberToString = num => num.toString()
 ```
 
+**Example 3:**
+```js
+const Identity = value => ({
+  map: fn => Identity(fn(value)),
+});
+const myFunctor = Identity(1);
+myFunctor.map(trace); // 1
+myFunctor.map(myFunction).map(trace); // 2
+```
 
 ## Pure functions:
 Only transforms inputs in outpus.
