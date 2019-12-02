@@ -23,11 +23,9 @@ Well, I build this repository, because I consider it necessary to give my opinio
 ## Lazy evaluation:
 
 **Definition**:
-
 Lazy evaluation, or call-by-need is an evaluation strategy which delays the evaluation of an expression until its value is needed (non-strict evaluation) and which also avoids repeated evaluations.
 
 **Code example**:
-
 gdfgfdgsfdg dfgdsfgdfgdfsgdfgdsfgdsfgdfg
 
 https://www.tutorialspoint.com/functional_programming/functional_programming_lazy_evaluation.htm
