@@ -5,4 +5,4 @@ Well, I build this repository, because I consider it necessary to give my opinio
 
 In this repository, we will **learn* about this **words**:
 
-<img src="https://github.com/damiancipolat/Functional_programming_in_JS/blob/master/doc/cloud_2.png?raw=true" width="800px" align="center" />
+<img src="https://github.com/damiancipolat/Functional_programming_in_JS/blob/master/doc/cloud_2.png?raw=true" width="500px" align="center" />
