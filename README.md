@@ -119,9 +119,25 @@ https://marmelab.com/blog/2018/09/26/functional-programming-3-functor-redone.htm
 ???
 
 ## Functor:
-https://medium.com/@dtinth/what-is-a-functor-dcf510b098b6
-A functor is simply something that can be mapped over. Is anything that can be use a map.
-In practice a functor represents a type that can be mapped over.
+
+**Definition**:
+
+A functor is simply something that can be mapped over. Is anything that can be use a map, in practice a functor represents a type that can be mapped over..
+
+**Code example**:
+
+ In other words, is any object we can map and apply a function generating another object instance of the same type and connections.
+ 
+**Example 1:**
+```js
+[1, 2, 3].map(val => val * 2); //generates [2, 4, 6], Array  is a functor.
+```
+
+**Example 2:**
+```js
+[1, 2, 3].map(val => val * 2); //generates [2, 4, 6], Array  is a functor.
+```
+
 
 ## Pure functions:
 Only transforms inputs in outpus.
@@ -160,6 +176,7 @@ Specialy from Anjana Vakil - **JSCONF**:
 - http://bangbangcon.com/speakers.html#anjana-vakil
 
 Others websites:
+- https://medium.com/front-end-weekly/implementing-javascript-functors-and-monads-a87b6a4b4d9a
 - https://marmelab.com/blog/2018/04/18/functional-programming-2-monoid.html
 - https://codewords.recurse.com/issues/four/lazy-composable-and-modular-javascript
 - https://www.tutorialspoint.com/functional_programming/functional_programming_lazy_evaluation.htm
