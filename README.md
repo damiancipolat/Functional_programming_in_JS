@@ -42,12 +42,32 @@ var lazyValue = () => 1 + 1  // Evaluates to 2 when lazyValue is *invoked*
 **Example 2:**
 ```js
 // Not lazy
-var value = 1 + 1  // immediately evaluates to 2
+var add = (x, y) => x + y
+var result = add(1, 2)  // Immediately evaluates to 3
 
 // Lazy
-var lazyValue = () => 1 + 1  // Evaluates to 2 when lazyValue is *invoked*
+var addLazy = (x, y) => () => x + y;
+var result = addLazy(1, 2)  // Returns a thunk which *when evaluated* results in 3.
 ```
 
+**Example 3:**
+```js
+// Curried add (not lazy)
+var add = x => y => x + y
+var add3 = add(3)
+var result = add3(7)  // Immediately evaluates to 10
+```
+
+**Example 4:**
+```js
+// Not lazy
+var callApi = spec => fetch(spec.url, spec.options);
+var result = callApi({url: '/api', options: {}});
+
+// Lazy
+var callApiLazy = spec => () => fetch(spec.url, spec.options);
+var result = callApiLazy({url: '/api', options: {}});
+```
 
 ## Monoid:
 https://marmelab.com/blog/2018/04/18/functional-programming-2-monoid.html
