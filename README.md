@@ -124,6 +124,7 @@ Specialy from Anjana Vakil - **JSCONF**:
 - http://bangbangcon.com/speakers.html#anjana-vakil
 
 Others websites:
+- https://marmelab.com/blog/2018/04/18/functional-programming-2-monoid.html
 - https://codewords.recurse.com/issues/four/lazy-composable-and-modular-javascript
 - https://www.tutorialspoint.com/functional_programming/functional_programming_lazy_evaluation.htm
 - https://www.youtube.com/watch?v=-tndyOuK7z8
