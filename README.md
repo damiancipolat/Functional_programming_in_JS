@@ -161,10 +161,56 @@ myFunctor.map(myFunction).map(trace); // 2
 ```
 
 ## Pure functions:
-Only transforms inputs in outpus.
+
+**Definition**:
+
+A function is a process which takes some input, called arguments, and produces some output called a return value.
+
+**Code example**:
+
+ There are Impure and pure functions, if a function modify something extern to the return cause a side effect.
+ 
+- Given the same input, will always return the same output.
+- Produce no side effects.
+ 
+**Example 1:**
+```js
+//Some examples of pure functions.
+const add = (x, y) => x+y;
+const sub = (x, y) => x-y;
+
+//Not pure functions
+let tmp = 2;
+
+const concat = (a,b)=>{
+ tmp = 3;
+ return a+b;
+};
+```
+
+**Example 2:**
+```js
+const double = x => x * 2;
+```
+
+**Example 3:**
+```js
+function add(a, b) {
+  return a + b;
+}
+
+function mul(a, b) {
+  return a * b;
+}
+
+let x = add(2, mul(3, 4));
+```
 
 ## Side effects:
 Is when a function make other things more than return somethings.
+
+## Referential transparency:
+sss
 
 ## High order functions:
 Functions that receive an other functions as input/output.
