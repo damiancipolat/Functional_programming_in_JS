@@ -38,10 +38,6 @@ const spanishDb = require('./modules/spanish');
 let spanish = new spanishDb();
 ```
 **Resources**:
-
-https://www.tutorialspoint.com/functional_programming/functional_programming_lazy_evaluation.htm
-https://www.youtube.com/watch?v=-tndyOuK7z8
-https://www.youtube.com/watch?v=q2NgcoXki7o
 ?
 
 ## Monoid:
@@ -99,6 +95,9 @@ Specialy from Anjana Vakil - **JSCONF**:
 - http://bangbangcon.com/speakers.html#anjana-vakil
 
 Others websites:
+- https://www.tutorialspoint.com/functional_programming/functional_programming_lazy_evaluation.htm
+- https://www.youtube.com/watch?v=-tndyOuK7z8
+- https://www.youtube.com/watch?v=q2NgcoXki7o
 - https://github.com/vakila/functional-workshop
 - https://speakerdeck.com/vakila/first-steps-into-functional-programming
 - https://www.codingame.com/playgrounds/2980/practical-introduction-to-functional-programming-with-js
