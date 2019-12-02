@@ -186,6 +186,7 @@ Specialy from Anjana Vakil - **JSCONF**:
 - http://bangbangcon.com/speakers.html#anjana-vakil
 
 Others websites:
+- https://teamtreehouse.com/community/what-is-a-lambda-in-javascript
 - https://medium.com/front-end-weekly/implementing-javascript-functors-and-monads-a87b6a4b4d9a
 - https://marmelab.com/blog/2018/04/18/functional-programming-2-monoid.html
 - https://codewords.recurse.com/issues/four/lazy-composable-and-modular-javascript
