@@ -23,15 +23,26 @@ Well, I build this repository, because I consider it necessary to give my opinio
 ## Lazy evaluation:
 
 **Definition**:
+
 Lazy evaluation, or call-by-need is an evaluation strategy which delays the evaluation of an expression until its value is needed (non-strict evaluation) and which also avoids repeated evaluations.
 
 **Code example**:
+
 gdfgfdgsfdg dfgdsfgdfgdfsgdfgdsfgdsfgdfg
+
+```js
+//Incluyo el modulo con la clase de analisis sintactico para español.
+const spanishDb = require('./modules/spanish');
+
+//Creo una instancia a la clase.
+let spanish = new spanishDb();
+```
+**Resources**:
 
 https://www.tutorialspoint.com/functional_programming/functional_programming_lazy_evaluation.htm
 https://www.youtube.com/watch?v=-tndyOuK7z8
 https://www.youtube.com/watch?v=q2NgcoXki7o
-????
+?
 
 ## Monoid:
 https://marmelab.com/blog/2018/04/18/functional-programming-2-monoid.html
