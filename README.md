@@ -13,7 +13,7 @@ https://en.wikipedia.org/wiki/Functional_programming
 
 
 ### In this repository we will learn about this concepts:
-- Lazy
+- Lazy[Link](#lazy-evaluation)
 - Monoid
 - Monad
 - Functor
