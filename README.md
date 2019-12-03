@@ -25,7 +25,7 @@ https://en.wikipedia.org/wiki/Functional_programming
 - [Compose](#compose)
 - [High order functions](#high-order-functions)
 - [Pure functions](#pure-functions)
-- [First Class](#first-class)
+- [First Class](#first-class-function)
 - [Side effects](#side-effects)
 
 
