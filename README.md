@@ -18,7 +18,7 @@ https://en.wikipedia.org/wiki/Functional_programming
 - [Monad](#monad)
 - [Functor](#functor)
 - [Curry](#curry)
-- [Lambda](#mabda)
+- [Lambda](#lambda)
 - [Recursion](#recursion)
 - [Closure](#closure)
 - [Stateless](#stateless)
