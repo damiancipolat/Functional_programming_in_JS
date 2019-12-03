@@ -321,15 +321,20 @@ calc(100.50,ivaTax);
 
 **Definition**:
 
-5555555555555555555
+Recursion is a technique for iterating over an operation by having a function call itself repeatedly until it arrives at a result. Most loops can be rewritten in a recursive style, and in some functional languages this approach to looping is the default.
 
 **Code example**:
 
-444444444444444444444444444444444444444.
+JavaScript’s functional coding style does support recursive functions, we need to be aware that most **JavaScript compilers are not currently optimized to support them safely**.
+
+We can use **filter**, **map**, **reduce**, **foreach** high order functions to make recursion in JS.
  
-**Example 1:**
+**Example:**
 ```js
-111111111111111111111111111111111
+const countdown = (value) => (value>0)?countdown(value-1):value;
+
+//Call
+countdown(10);
 ```
 Dont iretate: use map, filter, reduce.
 avoid mutation data:avoid tp change data, make or use a function to return a new data, but modify directly.}
