@@ -247,7 +247,28 @@ const sum = (a,b)=>{
 ```
 
 ## Referential transparency:
-sss
+
+**Definition**:
+
+In programming, referential transparency is generally defined as the fact that an expression, in a program, may be replaced by its value (or anything having the same value) without changing the result of the program. This implies that methods should always return the same value for a given argument, without having any other effect.
+
+**Code example**:
+
+Side effects are mostly avoided in functional programming, which makes the effects of a program much easier to understand, and much easier to test.
+
+**Example 1:**
+```js
+int add(int a, int b) {
+    return a + b
+}
+
+int mult(int a, int b) {
+    return a * b;
+}
+
+So the expression is add(2, mult(3, 4)) and if we replace mult(3, 4) with 12.
+add(2, mult(3, 4)) === 12
+```
 
 ## High order functions:
 Functions that receive an other functions as input/output.
