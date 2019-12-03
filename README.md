@@ -212,26 +212,38 @@ let x = add(2, mul(3, 4));
 
 A side effect is any application state change that is observable outside the called function other than its return value.
 
-- Modifying any external variable or object property (e.g., a global variable, or a variable in the parent function scope chain)
-- Logging to the console
-- Writing to the screen
-- Writing to a file
-- Writing to the network
-- Triggering any external process
-- Calling any other functions with side-effects
-
+- Modifying any external variable or object property (e.g., a global variable, or a variable in the parent function scope chain).
+- Logging to the console.
+- Writing to the screen.
+- Writing to a file.
+- Writing to the network.
+- Triggering any external process.
+- Calling any other functions with side-effects.
 
 **Code example**:
 
-Lazy evaluation is the process of deferring the evaluation of an expression until later, and this can be done with thunks.
+Side effects are mostly avoided in functional programming, which makes the effects of a program much easier to understand, and much easier to test.
 
 **Example 1:**
 ```js
-// Not lazy
-var value = 1 + 1  // immediately evaluates to 2
+let default = '';
 
-// Lazy
-var lazyValue = () => 1 + 1  // Evaluates to 2 when lazyValue is *invoked*
+const run = ()=>{
+ default = '1111;
+ return 'aaaaaaaa';
+}
+
+run();
+```
+
+**Example 2:**
+```js
+let counter = 0;
+
+const sum = (a,b)=>{
+  counter++;
+  return a+b;
+}
 ```
 
 ## Referential transparency:
