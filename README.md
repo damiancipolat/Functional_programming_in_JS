@@ -329,16 +329,43 @@ JavaScript’s functional coding style does support recursive functions, we need
 
 We can use **filter**, **map**, **reduce**, **foreach** high order functions to make recursion in JS.
  
-**Example:**
+**Example 1:**
 ```js
 const countdown = (value) => (value>0)?countdown(value-1):value;
-
-//Call
-countdown(10);
 ```
-Dont iretate: use map, filter, reduce.
-avoid mutation data:avoid tp change data, make or use a function to return a new data, but modify directly.}
-persiste data structures for inmutability, example inmutable js or use this id of the tree. mori / inmutable.js
+
+**Example 2:**
+```js
+const factorial = (number) => (number<=0)?1:(number*factorial(number-1));
+```
+
+**CAUTION:** 
+
+Could be possible, using this functions to cause a stackoverflow in the call stack of the JS engine. 
+
+**RangeError: Maximum call stack size exceeded:**
+```js
+countdown(100000)
+
+Uncaught RangeError: Maximum call stack size exceeded
+    at countdown (<anonymous>:1:19)
+    at countdown (<anonymous>:1:40)
+    at countdown (<anonymous>:1:40)
+    at countdown (<anonymous>:1:40)
+    at countdown (<anonymous>:1:40)
+    at countdown (<anonymous>:1:40)
+    at countdown (<anonymous>:1:40)
+    at countdown (<anonymous>:1:40)
+    at countdown (<anonymous>:1:40)
+    at countdown (<anonymous>:1:40)
+```
+
+**SOLUTION:**
+Exists a technique call TRAMPOLINE to solve this situation.
+
+```js
+const factorial = (number) => (number<=0)?1:(number*factorial(number-1));
+```
 
 ## Closure:
 A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function’s scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
