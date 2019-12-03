@@ -478,15 +478,53 @@ You can continue riding in this link: https://medium.com/front-end-weekly/javasc
 
 **Definition**:
 
-5555555555555555555
+Lambda expressions are present in most of modern programming languages (Python, Ruby, Java...). They are simply expressions that create functions. This is really important for a programming language to support first-class functions which basically means passing functions as arguments to other functions or assigning them to variables.
+
+**What is a Lambda?**
+
+In computer science, the most important, defining characteristic of a lambda expression is that it is used as data. That is, the function is passed as an argument to another function, returned as a value from a function, or assigned to variables or data structures. Is a classic in programming language when we talk about lambda use => or -> simbols.
+
+**Lambda vs anonymous functions:**
+
+An **anonymous function** is, as its name implies, a function without a name.
+
+```js
+const hello = function(name){console.log('Hi '+name);}
+
+Or using arrow functions
+const hello = (name) => {console.log('Hi '+name);}
+
+Other example:
+[1,2,3,4,6].filter((num)=>num>=3); //(num)=>num>=3 is an anonymous function
+
+```
+
+A **lambda function** is a function used as parameter:
+
+```js
+[1,2,3,4,5,6,7,8].map(e=>({value:e})); //e=>({value:e}) Is a LAMBDA.
+
+$('#el').on('click',()=>{.....});       //Is a LAMBDA and anonymous and arrow function.
+$('#el').on('click',function(){.....}); //Is a LAMBDA and anonymous function.
+$('#el').on('click',function clickHandler()=>{.....}); //Is a LAMBDA and a named functions.
+```
 
 **Code example**:
 
-444444444444444444444444444444444444444.
+So a Lambda not always is an anonymous function, looks like some people are still confused, because you've accepted "lambda = anonymous" as gospel. While it is a somewhat useful concept to understand that anonymous functions have interesting uses, such as points-free-style (tacit programming), that is not the salient point of lambdas. It's mostly syntactical sugar.
  
-**Example 1:**
+**Example - arrow functions:**
 ```js
-111111111111111111111111111111111
+const isChildren = (person)=>person.age<18;
+const isTeen     = (person)=>person.age>18 and person.age<25;
+
+const course = [{name:'bob',age:18},{name:'Damian',age:32},{name:'Alexander',age:19}];
+
+//Get childrens.
+course.filter(person=>isChildren(person));
+
+//Get teens.
+course.filter(person=>isTeen(person));
 ```
 
 ## The resources come from this websites and talks
@@ -495,7 +533,8 @@ Specialy from Anjana Vakil - **JSCONF**:
 - http://2016.jsunconf.eu/
 - http://bangbangcon.com/speakers.html#anjana-vakil
 
-Others websites:
+From many websites:
+- https://gist.github.com/ericelliott/414be9be82128443f6df
 - https://teamtreehouse.com/community/what-is-a-lambda-in-javascript
 - https://medium.com/front-end-weekly/implementing-javascript-functors-and-monads-a87b6a4b4d9a
 - https://marmelab.com/blog/2018/04/18/functional-programming-2-monoid.html
