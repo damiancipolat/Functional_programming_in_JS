@@ -14,19 +14,19 @@ https://en.wikipedia.org/wiki/Functional_programming
 
 ### In this repository we will learn about this concepts:
 - [Lazy evaluation](#lazy-evaluation)
-- Monoid
-- Monad
-- Functor
-- Curry
-- Lambda
-- Recursion
-- Closure
-- Stateless
-- Compose
-- High order functions
-- Pure functions
-- First Class
-- Side effects
+- [Monoid](#monoid)
+- [Monad](#monad)
+- [Functor](#functor)
+- [Curry](#curry)
+- Lambda[Lazy evaluation](#lazy-evaluation)
+- Recursion[Lazy evaluation](#lazy-evaluation)
+- Closure[Lazy evaluation](#lazy-evaluation)
+- Stateless[Lazy evaluation](#lazy-evaluation)
+- Compose[Lazy evaluation](#lazy-evaluation)
+- High order functions[Lazy evaluation](#lazy-evaluation)
+- Pure functions[Lazy evaluation](#lazy-evaluation)
+- First Class[Lazy evaluation](#lazy-evaluation)
+- Side effects[Lazy evaluation](#lazy-evaluation)
 
 
 ## Lazy evaluation
