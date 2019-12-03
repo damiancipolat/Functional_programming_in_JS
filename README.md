@@ -1,7 +1,9 @@
 <img src="https://github.com/damiancipolat/Functional_programming_in_JS/blob/master/doc/fp.png?raw=true" width="125px" align="right" />
 
 # Functional programming in Javascript
-Well, I build this repository, because I consider it necessary to give my opinion based on my experience on how it is the best way to **check data types** in our projects using javascript. I think that JS is a great language that today is changing many ways of how to program, all this makes many programmers the lack of a static type checking system in variables at the time of compilation, causes in many people fear and uncertainty on how to handle certain aspects of an application
+I have been a javascript programmer for a long time and I have seen this language grow, from a simple tool to validate forms with jquery, to be able to create large backend platforms. Since ES6 appeared and the ability to add "classes" I see that it has only caused a confusion in the way of programming, making a javascript code as a migration from java. 
+
+Since I came across functional programming I saw how it adapts perfectly to the potential of javascript and how it achieves a much better clarity in the way of writing code.
 
 ### In this repository we will learn about this concepts:
 - Lazy
