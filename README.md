@@ -403,16 +403,31 @@ Combine, functions' effects to create a pipeline through which our program's dat
 
 **Definition**:
 
-5555555555555555555
+Currying is the process of taking a function with multiple arguments and turning it into a sequence of functions each with only a single argument.
 
 **Code example**:
 
-444444444444444444444444444444444444444.
+A curried function is a function that takes multiple arguments one at a time.
  
-**Example 1:**
+**Example - Curry 1:**
 ```js
-111111111111111111111111111111111
+const notCurry = (x, y, z) => x + y + z; // a regular function
+const curry    = x => y => z => x + y + z; // a curry function
 ```
+
+**Example - Curry 2:**
+```js
+const divisible = mod => num => num % mod;
+
+//Call
+divisible(10)(2);
+
+//Call 2
+const divisibleEn3 = divisible(3);
+divisibleEn3(10)
+```
+
+You can continue riding in this link: https://medium.com/front-end-weekly/javascript-es6-curry-functions-with-practical-examples-6ba2ced003b1
 
 ## Lambda:
 
