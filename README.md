@@ -527,6 +527,16 @@ course.filter(person=>isChildren(person));
 course.filter(person=>isTeen(person));
 ```
 
+**Example - named functions:**
+```js
+$('#el').on('click',function clickHandler()=>{.....}); //Is a LAMBDA and a named functions.
+```
+
+**Example - anonymousfunctions:**
+```js
+$('#el').on('click',()=>{.....}); 
+```
+
 ## The resources come from this websites and talks
 
 Specialy from Anjana Vakil - **JSCONF**:
