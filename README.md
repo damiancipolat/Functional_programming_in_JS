@@ -360,11 +360,33 @@ Uncaught RangeError: Maximum call stack size exceeded
     at countdown (<anonymous>:1:40)
 ```
 
-**SOLUTION:**
-Exists a technique call TRAMPOLINE to solve this situation.
+**SOLUTION - TRAMPOLINE:**
 
+Exists a technique call **TRAMPOLINE** to solve this situation.
+
+Some links of this topic:
+https://eddmann.com/posts/recursive-functions-using-a-trampoline-in-javascript/
+https://medium.com/@cukejianya/functional-js-trampolines-tails-88723b4da320
+https://en.wikipedia.org/wiki/Trampoline_%28computing%29
+https://raganwald.com/2013/03/28/trampolines-in-javascript.html
+
+**Code examples:**
 ```js
-const factorial = (number) => (number<=0)?1:(number*factorial(number-1));
+
+//TRAMPOLINE
+const trampoline = (fn) => {
+    while (typeof fn === 'function') {
+        fn = fn();
+    }
+    return fn;
+};
+
+//Test functions
+const odd  = (n) => () => n === 0 ? false : even(n - 1);
+const even = (n) => () => n === 0 ? true : odd(n - 1);
+
+//Use
+trampoline(factorial(100000)) // BigInt required
 ```
 
 ## Closure:
