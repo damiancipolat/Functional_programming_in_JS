@@ -317,6 +317,32 @@ const calc = (ammount, tax) => tax(ammount);
 calc(100.50,ivaTax);
 ```
 
+## First-Class function:
+
+**Definition**:
+
+I think is important to write about this concept, maybe is'nt from a Fp, but is interesting. First-class functions, meaning that functions are treated like any other first-class object — they can be stored in variables, passed around, returned from other functions, and even hold their own properties. Sometimes referred to as a first-class citizen, is an object that supports all of the operations generally allowed to other objects. 
+
+In fact, JavaScript functions are themselves types of objects. A first-class function can thus be expected to support the same operations we would expect from other objects.
+
+- Be stored in a variable;
+- Be passed as arguments to functions;
+- Be returned by functions;
+- Be stored in some data structure; and,
+ - Hold their own properties and methods.
+
+**Code example**:
+
+For the JavaScript programmer this means that you can take advantage of powerful design patterns such as higher-order functions, partial function application, callbacks, and more.
+ 
+**Example - stored function:**
+
+```js
+const sayHi = (name)=>console.log('HI',name);
+sayHi('Damian');
+
+```
+
 ## Recursion:
 
 **Definition**:
