@@ -266,8 +266,9 @@ int mult(int a, int b) {
     return a * b;
 }
 
-So the expression is add(2, mult(3, 4)) and if we replace mult(3, 4) with 12.
-add(2, mult(3, 4)) === 12
+// 1) The expression is add(2, mult(3, 4)).
+// 2) If we replace mult(3,4) with his result 12.
+// 3) We can make this add(2, 12) === add(2, mult(3, 4))
 ```
 
 ## High order functions:
