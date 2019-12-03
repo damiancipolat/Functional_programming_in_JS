@@ -281,9 +281,56 @@ int mult(int a, int b) {
 ```
 
 ## High order functions:
-Functions that receive an other functions as input/output.
+
+**Definition**:
+
+Higher-order functions are functions that take other functions as arguments or return functions as their results.
+
+**Code example**:
+
+In Javascript, functions are values ( first-class citizens ). This means that they can be assigned to a variable and/or passed as a value..
+
+**Example - Map:**
+```js
+const double = n => n * 2
+
+//The map function is a high order function.
+[1, 2, 3, 4].map(double); // [ 2, 4, 6, 8 ]
+```
+
+**Example - Filter:**
+```js
+let isBoy = student => student.sex === 'M';
+
+//Filter is high order function.
+let getBoys = grades =>grades.filter(isBoy);
+```
+
+**Example - Custom:**
+```js
+const ivaTax = (a)=> ((a*21)/100);
+
+//Calc is high order function.
+const calc = (ammount, tax) => tax(ammount);
+
+//Use
+calc(100.50,ivaTax);
+```
 
 ## Recursion:
+
+**Definition**:
+
+5555555555555555555
+
+**Code example**:
+
+444444444444444444444444444444444444444.
+ 
+**Example 1:**
+```js
+111111111111111111111111111111111
+```
 Dont iretate: use map, filter, reduce.
 avoid mutation data:avoid tp change data, make or use a function to return a new data, but modify directly.}
 persiste data structures for inmutability, example inmutable js or use this id of the tree. mori / inmutable.js
