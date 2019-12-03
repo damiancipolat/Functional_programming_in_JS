@@ -394,7 +394,27 @@ A closure is the combination of a function bundled together (enclosed) with refe
 https://developer.mozilla.org/es/docs/Web/JavaScript/Closures
 
 ## Stateless:
+
+**Definition**:
+
 Stateless programming is a paradigm in which the operations (functions, methods, procedures, whatever you call them) you implement are not sensitive to the state of the computation. That means all the data used in an operation are passed as inputs to the operation, and all the data used by whatever operations invoked that operation are passed back as outputs. In practice, this means the program must have Value semantics (it is not permitted to modify shared/aliased data structures, and objects do not have an identity), must not use global or class variables, and all input/output must be handled specially (such as through monads or by threading an I/O state through any parts of the computation that perform I/O). Exception handling may also make the computation stateful.
+https://stephen-young.me.uk/2013/01/20/functional-programming-with-javascript.html
+**Code example**:
+
+This is a form of function composition since this is the result of the multiplication that is passed to the add function.
+ 
+**Example**
+```js
+const isEven = x => x % 2 === 0
+const filterOutOdd = collection => collection.filter(isEven)
+
+const add = (x, y) => x + y
+const sum = collection => collection.reduce(add)
+
+const sumEven = collection => compose(sum, filterOutOdd)(collection)
+
+sumEven([1, 2, 3, 4])
+```
 
 ## Compose:
 
