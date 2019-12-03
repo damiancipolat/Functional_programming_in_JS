@@ -127,15 +127,15 @@ doubleThenAdd5(3); // 11
 
 **Definition**:
 
-5555555555555555555
+todo pending
 
 **Code example**:
 
-444444444444444444444444444444444444444.
+todo pending
  
 **Example 1:**
 ```js
-111111111111111111111111111111111
+todo pending
 ```
 
 ## Functor:
@@ -325,11 +325,11 @@ I think is important to write about this concept, maybe is'nt from a Fp, but is 
 
 In fact, JavaScript functions are themselves types of objects. A first-class function can thus be expected to support the same operations we would expect from other objects.
 
-- Be stored in a variable;
-- Be passed as arguments to functions;
-- Be returned by functions;
-- Be stored in some data structure; and,
- - Hold their own properties and methods.
+- Be stored in a variable.
+- Be passed as arguments to functions.
+- Be returned by functions.
+- Be stored in some data structure.
+- Hold their own properties and methods.
 
 **Code example**:
 
@@ -340,7 +340,30 @@ For the JavaScript programmer this means that you can take advantage of powerful
 ```js
 const sayHi = (name)=>console.log('HI',name);
 sayHi('Damian');
+```
 
+**Example - passed as argument:**
+```js
+const tax = (tax)=>(tax*21)/100;
+const buy = (value,taxes)=> value+taxes(value);
+
+//Use
+buy(100,tax);
+```
+
+**Example - stored in structures:**
+```js
+const tax = (tax)=>(tax*21)/100;
+const buy = (value,taxes)=> value+taxes(value);
+
+const scooter = {
+ ammount:100,
+ buy,
+ tax
+};
+
+//Use
+scooter.buy(scooter.value,scooter.tax);
 ```
 
 ## Recursion:
