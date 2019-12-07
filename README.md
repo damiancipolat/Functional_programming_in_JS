@@ -34,6 +34,7 @@ There are some very interesting links to read after my notes:
 - https://github.com/haskellcamargo/js-real-world-functional-programming (Nice!)
 - https://leanpub.com/fljs
 - https://medium.com/@lunasunkaiser/going-functional-with-javascript-3c6b2e32c5ea (Nice!)
+- https://medium.com/@_cyberglot/functional-programming-should-be-your-1-priority-for-2015-47dd4641d6b9? (Nice!)
 
 
 ## Lazy evaluation
