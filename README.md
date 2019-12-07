@@ -31,8 +31,9 @@ https://en.wikipedia.org/wiki/Functional_programming
 ## Readings
 There are some very interesting links to read after my notes:
 - http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html
-- https://github.com/haskellcamargo/js-real-world-functional-programming
+- https://github.com/haskellcamargo/js-real-world-functional-programming (Nice!)
 - https://leanpub.com/fljs
+- https://medium.com/@lunasunkaiser/going-functional-with-javascript-3c6b2e32c5ea (Nice!)
 
 
 ## Lazy evaluation
