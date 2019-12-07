@@ -28,6 +28,12 @@ https://en.wikipedia.org/wiki/Functional_programming
 - [First Class](#first-class-function)
 - [Side effects](#side-effects)
 
+## Readings
+There are some very interesting links to read after my notes:
+- http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html
+- https://github.com/haskellcamargo/js-real-world-functional-programming
+- https://leanpub.com/fljs
+
 
 ## Lazy evaluation
 
