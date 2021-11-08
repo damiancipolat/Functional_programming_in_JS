@@ -23,6 +23,7 @@ https://en.wikipedia.org/wiki/Functional_programming
 - [Closure](#closure)
 - [Stateless](#stateless)
 - [Compose](#compose)
+- [Referencial transparency](#referentia-transparency)
 - [High order functions](#high-order-functions)
 - [Pure functions](#pure-functions)
 - [First Class](#first-class-function)
